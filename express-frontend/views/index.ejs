@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>AWS ECS App</title></head>
+<body>
+  <h1>Express + Flask on AWS ECS</h1>
+  <% if (error) { %>
+    <p style="color:red"><%= error %></p>
+  <% } else { %>
+    <ul>
+      <% items.forEach(item => { %>
+        <li>#<%= item.id %> - <%= item.name %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+</body>
+</html>
